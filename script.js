@@ -139,7 +139,12 @@ function playTick(){
    Preguntas y respuestas
    ========================= */
 function showQuestion(){
-  if(remaining.length === 0){
+   if (questionsAsked >= maxQuestions) {
+    alert("Ya respondiste las 10 preguntas.");
+    return;
+  }
+
+   if(remaining.length === 0){
     winGame();
     return;
   }
