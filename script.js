@@ -143,11 +143,6 @@ function showQuestion(){
     alert("Ya respondiste las 10 preguntas.");
     return;
   }
-
-   if(remaining.length === 0){
-    winGame();
-    return;
-  }
   current = remaining.pop(); // toma una y evita repetición
   qText.textContent = current.q;
   answersForm.innerHTML = '';
